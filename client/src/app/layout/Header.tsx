@@ -38,6 +38,7 @@ export default function Header({darkMode, handleThemeChange}: Props) {
                 <Box display='flex' alignItems='center'>
                     <Typography variant='h6' component={NavLink} 
                         to='/' 
+                        exact
                         sx={navStyles}>
                         Re-Store
                     </Typography>
@@ -45,16 +46,16 @@ export default function Header({darkMode, handleThemeChange}: Props) {
                 </Box>
 
                 <List sx={{display: 'flex'}}>
-                        {midLinks.map(({title, path}) => (
-                            <ListItem
-                                component={NavLink}
-                                to={path}
-                                key={path}
-                                sx={navStyles}
-                            >
-                        {title.toUpperCase()}
-                    </ListItem>
-                ))}
+                    {midLinks.map(({title, path}) => (
+                        <ListItem
+                            component={NavLink}
+                            to={path}
+                            key={path}
+                            sx={navStyles}
+                        >
+                            {title.toUpperCase()}
+                        </ListItem>
+                    ))}
                 </List>
                 
                 <Box display='flex' alignItems='center'>

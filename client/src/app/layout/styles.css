@@ -16,3 +16,11 @@ code {
 .app h1{
   color: red;
 }
+
+body {
+  scrollbar-width: none;
+}
+
+html {
+  scrollbar-width: none;
+}
