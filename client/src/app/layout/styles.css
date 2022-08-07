@@ -17,10 +17,7 @@ code {
   color: red;
 }
 
-body {
-  scrollbar-width: none;
-}
 
-html {
-  scrollbar-width: none;
+html::-webkit-scrollbar {
+  display: none;
 }
