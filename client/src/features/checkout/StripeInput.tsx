@@ -8,7 +8,7 @@ export const StripeInput = forwardRef(function StripeInput({component: Component
         const elementRef = useRef<any>();
 
         useImperativeHandle(ref, () => ({
-            forcus: () => elementRef.current.focus
+            focus: () => elementRef.current.focus
         }));
 
         return (
